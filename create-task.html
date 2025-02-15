@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">TaskManager</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="task-details.html">Task Details</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="create-task.html">Create Task</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dashboard Header -->
+    <header class="py-3">
+        <div class="container bg-dark-subtle text-dark text-center py-5">
+            <h1 class="display-5 fw-bold">Create a Task</h1>
+            <p class="fs-4">Add new tasks to your current list</p>
+        </div>
+    </header>
+
+    <!-- Task Creation Section -->
+    <section class="container my-5">
+        <div class="card p-4">
+            <h5>Create a New Task</h5>
+            <form>
+                <div class="mb-3">
+                    <label for="taskTitle" class="form-label">Task Title</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-pencil"></i></span>
+                        <input type="text" class="form-control" id="taskTitle" placeholder="Enter task title" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="taskDescription" class="form-label">Task Description</label>
+                    <textarea class="form-control" id="taskDescription" rows="3" placeholder="Enter task description"
+                        required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Add Task</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
